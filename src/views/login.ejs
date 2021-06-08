@@ -32,7 +32,7 @@
       </style>
     <body>
       <div id="login">
-        <form action="index.html" id="forms" onsubmit="return validation()">
+        <!-- <form action="index.html" id="forms" onsubmit="return validation()">
           <h2>Login page</h2>
         <label for="email">Email</label>
         <br>
@@ -51,6 +51,18 @@
           <input type="text" id="phone" placeholder="phonenumber" required>
           <br>
           <input type="submit">
+</form> -->
+<form action="/src/views/addAuthor.ejs" onsubmit="return validate()">
+  <h3>Sign In</h3>
+  <label for="email">Email</label>
+  <br>
+  <input type="email" placeholder="email" required>
+  <br>
+  <label for ="password">Password</label>
+  <br>
+  <input type="password"  placeholder="password" required>
+  <br>
+  <input type="submit" value="LOGIN">
 </form>
       </div> 
       <script src="/public/js/javascript.js"></script>
